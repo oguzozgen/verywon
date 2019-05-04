@@ -1,5 +1,5 @@
 # verywon
-verywon - It' sonline U :) And Fancy Data Virtualizations 
+verywon - It' s online U :) And Fancy Data Virtualizations 
 
 It's core BaseT-... repositories.
 Developed on Microservice Archtecture 
