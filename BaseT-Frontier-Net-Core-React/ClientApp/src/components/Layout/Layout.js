@@ -1,13 +1,13 @@
 import React,{Component, useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Button, Heading, Grommet,Text,Menu ,Grid} from 'grommet';
-import { Notification, User, Yoga, Home,Login,Logout } from 'grommet-icons';
+import { Notification, User, Yoga, Diamond,Login,Logout } from 'grommet-icons';
 import ContainerLayout from './components/ContainerLayout/ContainerLayout';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "../../Router/Routes";
 
 const linkStyle = {
-  color:'#6d6d6e',
+    color:'#F2F2F2',
   font: {
     family: 'Roboto',
     size: '26px',
@@ -18,7 +18,7 @@ const linkStyle = {
   const theme = {
     global: {
       colors: {
-        brand:'linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%)',    
+          brand:'#738678',    
      }, 
       font: {
         family: 'Roboto',
@@ -48,7 +48,8 @@ const AppBar = (props) => (
       style={{ zIndex: '1' }}
       {...props}
     />
-  );
+);
+
 function Layout(props) {
     const [latlng, setLatlng] = useState((props.latlng!=null?props.latlng:[]));
 
@@ -64,7 +65,7 @@ function Layout(props) {
                                     </Grid>
                                     <Grid align="center">                                         
                                           <Link style={linkStyle} to="/">
-                                           BRAND
+                                           verywon
                                           </Link>
                                     </Grid>
                                     <Grid align="end" direction='row'>
@@ -72,21 +73,21 @@ function Layout(props) {
                                             {props.oidcUser || !props.isEnabled ? (
                                                       <Box direction='row'>
                                                             <Link style={linkStyle} to="/profile">
-                                                                <User size="medium" title="Profile"/>
+                                                            <User size="medium" title="Profile" color="light-2"/>
                                                             </Link>
-                                                            <Link style={linkStyle} to="/admin">
-                                                                <Notification size="medium" title="Notification"/>
+                                                             <Link style={linkStyle} to="/Visualization">
+                                                                  <Diamond size="medium" color="light-2" title="Visualization"/>
                                                             </Link>                                           
-                                                            <Button onClick={props.logout}> <Logout size="medium"  title="Logout"/></Button>
+                                                             <Button onClick={props.logout}> <Logout size="medium" title="Logout" color="light-2"/></Button>
                                                         </Box>
                                                   ) : (
-                                                          <Button onClick={props.login}> <Login size="medium"  title="Login"/></Button>
+                                                            <Button onClick={props.login}> <Login size="medium" title="Login" color="light-2"/></Button>
                                                       )
                                               }
 
                                     </Grid>         
                             </AppBar>
-                            <Box flex align='center' justify='center'>                                  
+                            <Box flex align='center' justify='start'>                                  
                                   <ContainerLayout>    
 
                                     

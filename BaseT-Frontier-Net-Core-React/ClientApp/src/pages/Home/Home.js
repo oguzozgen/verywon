@@ -79,18 +79,8 @@ const ButtonFetch = ({ handleClick }) => (
     Simulate Fetch
   </button>
 );
-
-const ButtonFetchEnhance = enhanceFetch(ButtonFetch);
-
-export class Home extends Component {
-
-
-  render() {
-    return (
-            <div>
-              <h1>Home</h1>
-              <p>Unprotected home page</p>
-              <p>
+/**
+ *      <p>
                 <Button403Enhance />
               </p>
               <p>
@@ -99,7 +89,18 @@ export class Home extends Component {
               <p>
                 <ButtonFetchEnhance />
               </p>
-            </div>
+ * */
+const ButtonFetchEnhance = enhanceFetch(ButtonFetch);
+
+export class Home extends Component {
+
+
+  render() {
+    return (
+        <div>
+
+        welcome to verywon 
+        </div>
       );
     }}
 

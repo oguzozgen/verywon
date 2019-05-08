@@ -46,6 +46,8 @@ namespace IdentityServerWithAspNetIdentity
             };
         }
 
+        // AccessTokenLifetime = 3600 * 24,
+
         public static IEnumerable<Client> GetClients()
         {
             return new List<Client>
@@ -57,7 +59,11 @@ namespace IdentityServerWithAspNetIdentity
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
                     RequireConsent = false,
-                    AccessTokenLifetime = 3600 * 24,
+                   
+                    //WARNING Token lifetimes Changed Care the effects
+                    AbsoluteRefreshTokenLifetime =  60 * 30,//30 mins
+                    AccessTokenLifetime = 60 * 5,//5 mins
+                    SlidingRefreshTokenLifetime = 60 * 15, // 15 mins
 
                     RedirectUris = { 
                         "http://localhost:5100/authentication/callback",

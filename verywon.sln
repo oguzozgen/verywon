@@ -4,12 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X-Frontier-Net-Core-React", "BaseT-Frontier-Net-Core-React\X-Frontier-Net-Core-React.csproj", "{2F788FBA-8C52-4AB7-BA19-E4A5ED6C4A69}"
-	ProjectSection(ProjectDependencies) = postProject
-		{EBAA4828-A997-4228-964F-C62278056DF8} = {EBAA4828-A997-4228-964F-C62278056DF8}
-		{D7F54AA4-4F62-41C0-8AED-661D8432C6DF} = {D7F54AA4-4F62-41C0-8AED-661D8432C6DF}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "BaseT-Identity-Server\IdentityServer.csproj", "{EBAA4828-A997-4228-964F-C62278056DF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7F54AA4-4F62-41C0-8AED-661D8432C6DF} = {D7F54AA4-4F62-41C0-8AED-661D8432C6DF}
+		{2F788FBA-8C52-4AB7-BA19-E4A5ED6C4A69} = {2F788FBA-8C52-4AB7-BA19-E4A5ED6C4A69}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "BaseT-Service-Net-Core\Api.csproj", "{D7F54AA4-4F62-41C0-8AED-661D8432C6DF}"
 EndProject

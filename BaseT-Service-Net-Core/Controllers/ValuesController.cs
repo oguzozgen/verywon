@@ -15,7 +15,15 @@ namespace Api.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value12", "value22" };
+            return new string[] {
+                "value12", "value122",
+                "value3", "value223",
+                "value4", "value224",
+                "value5", "value225",
+                "value6", "value226",
+                "value7", "value227",
+                "value8", "value228"
+            };
         }
 
         // GET api/values/5
