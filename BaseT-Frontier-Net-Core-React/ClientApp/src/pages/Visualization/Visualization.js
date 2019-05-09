@@ -27,10 +27,7 @@ import * as _ from 'underscore';
 
 // WARN Enviroment selection
 const env = "dev";
-const githubAccessToken = "3de39e74cd50903e2558c683189148a5cf39f4a8";
-const mediumAccessToken = "";
-const stackoverflow = "";
-const freecodecampAccessToken = "";
+
 
 function Visualization(props) {
     const [githubData, setGithubData] = useState(
