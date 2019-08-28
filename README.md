@@ -1,5 +1,5 @@
-# verywon
-verywon - It' s online U :) And Fancy Data Visualizations.
+# verymir 
+verymir - It' s online U :) And Fancy Data Visualizations.
 
 I believe data visualization has more power than normal text. it's better to use dynamic visuals, instead of linkedin style texts.
 
