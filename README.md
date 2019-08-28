@@ -1,7 +1,7 @@
 # verywon
 verywon - It' s online U :) And Fancy Data Visualizations.
 
-I believe data visualization has more power than normal text and it's better to use dynamic visuals instead of linkedin style texts.
+I believe data visualization has more power than normal text. it's better to use dynamic visuals, instead of linkedin style texts.
 
 The plan is, gather all your data around the internet by their API's
 and create recent activities, plans, projects, publisies as a profile
@@ -15,8 +15,8 @@ stackoverflow,
 ?freecodecamp
 
 
-It's core BaseT-... repositories.
-Developed on Microservice Archtecture 
+It's core my own BaseT-... repositories.
+Development based on Microservice Archtecture 
 
 * Reactjs + Hooks .Net Core 2 on the front-end side
 * VisJS , D3js for Data Visualizations
