@@ -20,7 +20,7 @@
     "reactstrap": "^6.5.0",
     "rimraf": "^2.6.3",
     "styled-components": "^4.2.0",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "vis": "^4.21.0"
   },
   "devDependencies": {
